@@ -7,6 +7,17 @@
     <!-- links to style sheets, google fonts, etc. go here -->
 
 
+    <!--class css example Start-->
+
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+<style>
+  body div { border: 1px solid red; }
+</style>
+
+
+<!--class css example end -->
 
 
 
@@ -14,194 +25,124 @@
 
 
 
-<!-- main content start -->
+
+
+
+
+
+
+
+    <style>
+      body{
+        background-color: black;
+      }
+
+        </style>
+
+
+
+
+<!-- Navbar start -->
 
 <!DOCTYPE html>
-<html lang="en" dir= " ltr">
-  <head>
-    <meta charset= "utf-8">
-    <title>Responsive Navbar</title>
-    <meta name="viewport" content= "width-device-width, intial-
-    scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">FANDANGO</label>
-        <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">Movie News</a></li>
-          <li><a href="#">My Vip Account</a></li>
-          <li><a href="#">Location</a></li>
-        </ul>
-      </nav>
-      <section></section>
-    </body>
-    </html>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FANDANGO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MOVIES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">MOVIE NEWS</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MY VIP ACCOUNT
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">icon</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search Movie" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+          <!-- Navbar style start -->
 
 
-          <style>
-
-         {
-            padding: 0;
-            margin: 0;
-            text-decoration: none;
-            list-style: none;
-            box-sizing: border-box;
-          }
-          body{
-            font-family: "Verdana";
-          }
-          nav{
-            background: #0082e6;
-            height: 80px;
-            width: 100%;
-          }
-          label.logo{
-          color: white;
-          font-size: 35px;
-          line-height: 80px;
-          padding: 0 100px;
-          font-weight: bold;
-         }
-         nav ul{
-           float: right;
-           margin-right: 20px;
-         }
-         nav ul li{
-         display: inline-block;
-         line-height: 80px;
-         margin: 0 5px;
-        }
-        nav ul li a{
-        color: white;
-        font-size: 17px;
-        padding: 7px 13px;
-        border-radius: 3px;
-        text-transform: uppercase;
-      }
-      a.active,a:hover{
-        background: #1b9bff;
-        transition: .5s;
-      }
-      .checkbtn{
-        font-size: 30px;
-        color: white;
-        float: right;
-        line-height: 80px;
-        margin-right: 40px;
-        cursor: pointer;
-        display: none;
-      }
-      #check{
-        display: none;
-      }
-      @media(max-width: 952px){
-        label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-      }
-        nav ul li a{
-        font-size: 16px;
-      }
-    }
-    @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height:100vh;
-      background: #2c3e50;
-      top:80px;
-      left: 0;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-    }
-    section{
-    background: url(bg1.jpg) no-repeat;
-    background-size: cover;
-    height: calc(100vh- 80px);
-  }
-
-    </style>
-    <!-- main content end -->
+    <!-- Navbar style End -->
 
 
 
 
 
+
+
+
+
+
+    <!--Carousel Style Start -->
+
+    <!--Carousel Style End -->
 
     <!--Carousel Start -->
-    <style>
-      .carousel-item {
-        height: 32rem;
-        background-color: #777;
-        color: white;
-        position: relative;
-      }
-      .container {
-        position: absolute;
-        bottom:0;
-        left:0;
-        right:0;
-        padding-bottom:50px;
-      }
-    </style>
 
-      <div id="myCarousel" class="carousel slide"
-      data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel"
-            data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel"
-            data-slide-to="1"></li>
-          </ol>
-      <div class="carousel-inner">
-            <div class="carousel-item active">
-            <div class="container">
-              <h1>Tickets Now Available</h1>
-              <p>#1 Movie Right Now!</p>
-              <a href="#" class="btn btn-lg btn-primary">
-                BUY TICKETS
-              </a>
-          </div>
-            </div>
-            <div class="carousel-item">
-          <div class="container">
-                <h1>New Reptiles</h1>
-                <p>Be the first to get our newest reptiles.</p>
-                <a href="#" class="btn btn-lg btn-primary">
-                  View all
-                </a>
-            </div>
-        </div>
-            </div>
-        </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Fandango Images/Image 1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+
       </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Fandango Images/Image 2.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="Fandango Images/Image 3.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
       <!-- Carousel End -->
 
 
@@ -210,13 +151,23 @@
 
 
 
-      <!-- Containers/layout -->
+
+
+
+
+
+
+
+
+
+
+      <!-- Thumbnails Start -->
       <!DOCTYPE html>
       <html lang="en">
         <head>
           <meta charset= "utf-8">
           <title>Web Zone Css Grid</title>
-          <link rel="stylesheet" href="style.css"
+          <link rel="stylesheet" href="style.css">
         </head>
         <body>
           <div class="container">
@@ -232,21 +183,24 @@
         </ul>
     </div>
 
+        <!-- Thumbnails End-->
 
-        <!-- Style Css -->
-      <style>
+
+
+       <!-- Style Css/Thumbnails start-->
+  <style>
       .container{
         width: 90%;
         height: 10rem;
         margin: auto;
-        overflow: hidden;
+        overflow: none;
         background: none;
         margin-top: 20px;
       }
 
     .container ul{
-      padding: 0px;
-      margin: 0px;
+      padding: 10px;
+      margin: 20px;
     }
 
 
@@ -269,18 +223,94 @@
       width: 100%;
       height:50px;
       line-height: 50px;
-      background: #333333;
+      background: #FF7A00;
       text-align: center;
       color:white;
       font-size: 20px;
    }
+</style>
 
+
+
+
+
+   </main>
+   <footer class="sticky-footer">
+       <!-- <h2>Footer Stick to the Bottom</h2> -->
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">Movies</a></li>
+           <li><a href="#">Movie News</a></li>
+           <li><a href="#">Location</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
+       <p> FANDANGO 2022.</p>
+   </footer>
+
+
+
+
+
+
+<style>
+   /* Styles related to footer */
+   }
+   footer p{
+       padding:0;
+       font-size: 0.8em;
+       color: hsla(0, 50%, 100%, 0.35);
+       margin: 1em 0;
+       font-size: 1rem;
+   }
+   footer ul{
+       list-style: none;
+       display: flex;
+       margin: 1em 0;
+   }
+   footer ul li a{
+       padding: 1em;
+       text-decoration: none;
+       color: rgba(255, 255, 255, 0.904);
+       transition: 100ms;
+   }
+   footer ul li a:hover{
+       color: var(--prim);
+   }
+
+   footer{
+       width: 100%;
+       background: black;
+       color: #fff;
+       display: grid;
+       place-items: center;
+       padding: 2em;
+       font-size: 1.2rem;
+   }
+
+
+
+   /* Sticky Footer Styling */
+   body{
+       min-height: 100vh;
+   }
+   .sticky-footer{
+       position: sticky;
+       top: 100%;
+   }
+
+</style>
+
+
+
+
+
+
+
+<style>
     @media screen and (max-width:1250px){
     .container ul li{
         width:40%;
         margin-left: 40px;
     }
 
-
-    </body>
-  </html>
+</style>
